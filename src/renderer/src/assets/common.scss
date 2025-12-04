@@ -1,0 +1,51 @@
+/* 定义普通模式下的基础样式变量 */
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --border-color: #cccccc;
+  --scrollbar-thumb: #c1c1c1;
+  --scrollbar-thumb-hover: #a8a8a8;
+  --scrollbar-track: transparent;
+}
+
+/* 当系统处于暗黑模式时，重新定义变量 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --border-color: #444444;
+    --scrollbar-thumb: #555555;
+    --scrollbar-thumb-hover: #777777;
+    --scrollbar-track: transparent;
+  }
+}
+
+/* 应用基础样式 */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+  transition: background 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}

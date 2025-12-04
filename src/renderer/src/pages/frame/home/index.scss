@@ -1,0 +1,59 @@
+.ya-home-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .ya-home-results {
+    margin-top: 20px;
+    flex: 1;
+    height: 1px;
+    overflow-y: auto;
+
+    .ant-space {
+      justify-content: center;
+    }
+
+    .ya-home-loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+
+      &.height {
+        height: 100%;
+      }
+    }
+
+    .ya-home-prompt {
+      padding: 24px;
+      color: rgba(0, 0, 0, 0.45);
+    }
+
+    .load-more-container {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+
+      .load-more-button {
+        background-color: #dc0909;
+        color: white;
+        border: none;
+        padding: 10px 24px;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #b80707;
+          transform: scale(1.05);
+        }
+
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+  }
+}

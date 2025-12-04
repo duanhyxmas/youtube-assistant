@@ -1,0 +1,48 @@
+.ya-search {
+  h1 {
+    text-align: center;
+    color: #dc0909;
+  }
+
+  // 包装器确保输入框宽度占满
+  .ya-search-input-wrapper {
+    position: relative;
+
+    .ant-select {
+      width: 100%;
+    }
+
+    // 确保textarea占满宽度
+    .ant-input {
+      width: 100%;
+    }
+  }
+
+  // 添加搜索建议下拉框样式
+  .ant-select-dropdown {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .ya-search-loading {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 1;
+  }
+
+  .ya-search-controls {
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    .item {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+  }
+}

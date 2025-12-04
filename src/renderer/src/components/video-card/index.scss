@@ -1,0 +1,65 @@
+.ya-youtube-video-card {
+  width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .ya-video-card-content {
+    .ya-video-thumbnail {
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      height: 270px;
+    }
+
+    .ya-video-title {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      height: 36px;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 2;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .ya-video-channel-date {
+      display: flex;
+      margin-top: 4px;
+      font-size: 12px;
+
+      .ya-channel-name {
+        display: block;
+        margin-right: 10px;
+        flex: 1;
+      }
+
+      .ya-publish-date {
+        display: block;
+      }
+    }
+
+    .ya-video-actions {
+      .download-progress-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+
+        // 覆盖 antd 的默认样式，使进度条更紧凑
+        .ant-progress-inner {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .ant-progress-circle .ant-progress-text {
+          display: none;
+        }
+      }
+    }
+  }
+}

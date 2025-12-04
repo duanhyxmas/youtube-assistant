@@ -1,0 +1,17 @@
+.download-card {
+  cursor: pointer;
+  &:hover {
+    transition: background-color 0.3s;
+    background-color: #f5f5f5;
+  }
+
+  .download-error {
+    color: red;
+    margin-top: 8px;
+  }
+
+  .download-process {
+    margin-top: 8px;
+    width: 100%;
+  }
+}

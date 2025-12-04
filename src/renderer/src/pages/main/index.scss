@@ -1,0 +1,9 @@
+.ya-main-page {
+  display: flex;
+  min-height: 100vh;
+
+  .ya-main-content {
+    flex: 1;
+    background-color: #fafafa;
+  }
+}

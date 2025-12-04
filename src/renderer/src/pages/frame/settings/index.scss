@@ -1,0 +1,20 @@
+.ya-settings-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  h1 {
+    margin: 0;
+    background-color: antiquewhite;
+    padding: 20px;
+    height: 80px;
+    color: #dc0909;
+  }
+
+  .ya-settings-content {
+    flex: 1;
+    height: 1px;
+    padding: 0 20px;
+    overflow-y: auto;
+  }
+}
