@@ -31,7 +31,7 @@ A powerful desktop application built with Electron for managing and downloading 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/youtube-assistant.git
+git clone https://github.com/duanhyxmas/youtube-assistant.git
 cd youtube-assistant
 
 # Install dependencies
